@@ -24,6 +24,9 @@ $(document).ready(function(){
 
 		$('.fotos').hide(); 
 		$('#img'+ cont).fadeIn(1000); 
+
+		$('.fa-circle').css({'color': 'white'});
+		$('#cir'+ cont).css({'color': '#2DDEF3'});
 		
 	}
 
@@ -37,6 +40,9 @@ $(document).ready(function(){
 
 		$('.fotos').hide(); 
 		$('#img'+ cont).fadeIn(1000); 
+
+		$('.fa-circle').css({'color': 'white'});
+		$('#cir'+ cont).css({'color': '#2DDEF3'});
 	}
 
 	function paginacion(){
