@@ -3,7 +3,7 @@ $(document).ready(function(){
 	
 	$('.fotos').hide(); 
 	$('.fotos:first').show(); 
-	$('.fa-circle:first').css({'color': '#2DDEF3'});
+	$('.fa-circle:first').css({'color': '#60B99A'});
 
 	$('.right').click(siguiente);
 	$('.left').click(atras);
@@ -15,7 +15,7 @@ $(document).ready(function(){
 	}, 6000);
 
 	function siguiente(){
-		if( cont >= 3){
+		if( cont >= 5){
 			cont = 1;
 		} 
 		else {
@@ -26,13 +26,13 @@ $(document).ready(function(){
 		$('#img'+ cont).fadeIn(1000); 
 
 		$('.fa-circle').css({'color': 'white'});
-		$('#cir'+ cont).css({'color': '#2DDEF3'});
+		$('#cir'+ cont).css({'color': '#60B99A'});
 		
 	}
 
 	function atras(){
 		if( cont <= 1){
-			cont = 3;
+			cont = 5;
 		} 
 		else {
 			cont--;
@@ -42,7 +42,7 @@ $(document).ready(function(){
 		$('#img'+ cont).fadeIn(1000); 
 
 		$('.fa-circle').css({'color': 'white'});
-		$('#cir'+ cont).css({'color': '#2DDEF3'});
+		$('#cir'+ cont).css({'color': '#60B99A'});
 	}
 
 	function paginacion(){
@@ -52,7 +52,7 @@ $(document).ready(function(){
 		$('#img'+ circuloID).fadeIn(1000); 
 
 		$('.fa-circle').css({'color': 'white'});
-		$(this).css({'color': '#2DDEF3'});
+		$(this).css({'color': '#60B99A'});
 
 		cont = circuloID;
 

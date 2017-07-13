@@ -1,6 +1,15 @@
 body{
-	background-color: pink;
+	background-color: #1B676B;
 } 
+h1{
+	padding: 0;
+	color: #BEF202;
+	text-align: center;
+}
+#header{
+	margin: 0 0 10px 0;
+	border-bottom: 1px solid #88C425;
+}
 .slider{
 	position:relative;
 }
@@ -28,6 +37,22 @@ body{
 }
 #img3{
 	background-image: url(../img/animal3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 80vh;
+}
+#img4{
+	background-image: url(../img/animal4.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 80vh;
+}
+#img5{
+	background-image: url(../img/animal5.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
