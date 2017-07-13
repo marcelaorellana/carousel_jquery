@@ -3,14 +3,16 @@ $(document).ready(function(){
 	
 	$('.fotos').hide(); 
 	$('.fotos:first').show(); 
+	$('.fa-circle:first').css({'color': '#2DDEF3'});
 
 	$('.right').click(siguiente);
 	$('.left').click(atras);
+	$('.fa-circle').click(paginacion);
  
   
 	setInterval(function(){
 		siguiente();
-	}, 40000);
+	}, 6000);
 
 	function siguiente(){
 		if( cont >= 3){
@@ -23,7 +25,6 @@ $(document).ready(function(){
 		$('.fotos').hide(); 
 		$('#img'+ cont).fadeIn(1000); 
 		
-
 	}
 
 	function atras(){
@@ -36,6 +37,19 @@ $(document).ready(function(){
 
 		$('.fotos').hide(); 
 		$('#img'+ cont).fadeIn(1000); 
+	}
+
+	function paginacion(){
+		var circuloID = $(this).index() + 1; 
+		console.log(circuloID);
+		$('.fotos').hide(); 
+		$('#img'+ circuloID).fadeIn(1000); 
+
+		$('.fa-circle').css({'color': 'white'});
+		$(this).css({'color': '#2DDEF3'});
+
+		cont = circuloID;
+
 	}
 
 });
